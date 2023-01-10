@@ -122,9 +122,225 @@
     background: url(../img/slider-cover.svg) no-repeat center center/cover;
     height: 100vh;
     width: 100vw;
+    z-index: 99;
 }
 
-.mainVisual .main_slide_itms .itm01 {
+.mainVisual .main_slides {
+    position: relative;
+}
+
+.mainVisual .main_slides .main_slide_itms .itm01 {
     background: url(../img/mainslide01.jpg) no-repeat center center/cover;
     height: 100vh;
+}
+
+.mainVisual .main_slides .main_slide_itms .itm02 {
+    background: url(../img/mainslide02.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.mainVisual .main_slides .main_slide_itms .itm03 {
+    background: url(../img/mainslide03.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.mainVisual .main_slides .main_slide_itms .itm04 {
+    background: url(../img/mainslide04.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.mainVisual .main_slides .main_slide_desc {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    height: 340px;
+}
+
+.mainVisual .main_slides .main_slide_desc .slogan {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+
+    transition: opacity 1s;
+}
+
+.mainVisual .main_slides .main_slide_desc .slogan.on {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+
+}
+
+.mainVisual .main_slides .main_slide_desc .slogan p {
+    display: inline-block;
+    color: #999;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 40px 0;
+}
+
+.mainVisual .main_slides .main_slide_desc .slogan h3 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 70px;
+    margin: 0 0 40px 0;
+}
+
+.mainVisual .main_slides .main_slide_desc .slogan span {
+    display: inline-block;
+    color: #118ad9;
+}
+
+.mainVisual .main_slides .main_slide_desc .slogan strong {
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.mainVisual .main_slides .main_slide_order {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 5px 0;
+
+    display: flex;
+    gap: 20px;
+
+    z-index: 999;
+}
+
+.mainVisual .main_slides .main_slide_order span {
+    font-weight: 500;
+}
+
+.mainVisual .main_slides .main_slide_order .order_bar {
+    position: relative;
+
+    width: 180px;
+    height: 8px;
+    border-radius: 5px;
+    background: #e5e5e5;
+
+    margin: 5px 0 0 0;
+}
+
+.mainVisual .main_slides .main_slide_order .order_bar>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #118ad9;
+    border-radius: 5px;
+
+    transition: width 0.5s;
+}
+
+.mainVisual .main_slides .main_slide_order>ul {
+    display: flex;
+}
+
+.mainVisual .main_slides .main_slide_order>ul>li>i {
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.mainVisual .main_slides .main_slide_order .toggle::after {
+    content: "\ea3b";
+    font-family: xeicon;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.mainVisual .main_slides .main_slide_order .toggle.on::after {
+    content: "\ea3e";
+
+}
+
+.mainVisual .main_slides .search {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    z-index: 999;
+
+
+}
+
+.mainVisual .main_slides .search form {
+    display: flex;
+    gap: 10px;
+}
+
+.mainVisual .main_slides .search input {
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 3%) inset;
+
+    padding: 20px 200px 20px 20px;
+    border: 3px solid #fff;
+}
+
+.mainVisual .main_slides .search input:focus {
+    outline: 2px dotted #111;
+}
+
+
+.mainVisual .main_slides .search .search_btn button {
+
+    border: none;
+    background: transparent;
+
+    background: #00397f url(../img/icon-search-w.svg) no-repeat center /25px;
+    width: 50px;
+    height: 50px;
+    margin: 4px 0 0 0;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 1px rgb(0 57 127 / 30%);
+
+    cursor: pointer;
+}
+
+.mainVisual .main_slides .scrolldown {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    z-index: 999;
+}
+
+.mainVisual .main_slides .scrolldown::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 1px;
+    height: 50px;
+    background: #111;
+
+    z-index: 999;
+}
+
+.mainTalk {
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+
+.footer {
+    padding: 50px 0;
+    background: #292929;
 }
