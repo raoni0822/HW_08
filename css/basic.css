@@ -8,3 +8,15 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .inner {
+        width: auto;
+    }
+
+    .inner_flex {
+        width: auto;
+        margin: 0 auto;
+        /* flex-direction: column; */
+    }
+}
