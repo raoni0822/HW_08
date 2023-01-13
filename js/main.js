@@ -68,7 +68,8 @@ $(function () {
         sw = !sw;
     })
 
-    $('.footer .left .site_group>ul>li>button').on('click', function () {
+    $('.footer .site_group button').on('click', function () {
+
         $(this).next().toggleClass('on')
         $(this).parent().siblings().find('ul').removeClass('on')
     })
