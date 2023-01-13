@@ -75,6 +75,16 @@ $(function () {
     })
 
 
+    $(document).on('click', function (e) {
+        //console.log(e.target, $(e.target), $('button'));
+        console.log($(e.target)[0] == $('.footer .site_group button')[0]);
+        if ($(e.target)[0] != $('.footer .site_group button')[0]) {
+            $('.footer .site_group button').removeClass('on')
+        }
+    })
+
+
+
 
 
 
